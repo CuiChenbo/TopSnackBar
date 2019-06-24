@@ -5,8 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:id="@+id/rl"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,7 +20,7 @@
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="15dp"
         android:text="TopSnackbar"
         android:layout_centerHorizontal="true" />
 
@@ -24,17 +29,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Snackbar_Window"
-            android:layout_below="@id/btn"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="15dp"
             android:layout_centerInParent="true" />
         <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Snackbar"
-            android:layout_below="@id/btn"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="15dp"
         android:layout_centerInParent="true" />
+        <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转界面"
+            android:layout_marginTop="15dp"
+        android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知栏样式"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义Toast2"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/btnCrouton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crouton"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true" />
+
+    </LinearLayout>
+    </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

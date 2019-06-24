@@ -27,4 +27,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':topsnackbarlibrary')
+    implementation 'com.yw.game.floatmenu:FloatMenu:2.0.1'
+//    implementation 'com.github.o0o0oo00.Pudding:pudding:v1.1.2'
+    implementation 'com.kongzue.dialog_v3:dialog:3.0.0'
+//    implementation 'me.drakeet.support:toastcompat:1.1.0'
+    implementation 'com.github.johnpersano:supertoasts:2.0'
+
+    implementation('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
+        // exclusion is not necessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
 }

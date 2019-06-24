@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp">
-    <RelativeLayout
-        android:background="#bbffffff"
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
-        <ImageView
+    android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@mipmap/ic_launcher_round"
+            android:layout_height="match_parent"
+            android:text="HelloWord"
+            android:gravity="center"
+            android:background="#dd42b2b2"
             />
-    </RelativeLayout>
-
-
-</LinearLayout>
+</FrameLayout>

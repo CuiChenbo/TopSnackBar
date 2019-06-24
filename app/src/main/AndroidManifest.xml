@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="choi.ccb.com.snackbardemo">
+    package="choi.ccb.com.snackbardemo"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-sdk android:minSdkVersion="19"
+        tools:overrideLibrary="com.kongzue.dialog"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".A1" />
+
+        <service
+            android:name=".WindowService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
