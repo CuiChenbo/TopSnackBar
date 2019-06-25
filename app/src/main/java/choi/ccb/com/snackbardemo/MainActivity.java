@@ -106,7 +106,7 @@ start(A1.class);
         findViewById(R.id.btn5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TopWindowUtils.show(MainActivity.this,++sign+"前面的是次数");
+                TopWindowUtils.show(MainActivity.this,++sign+"个任务下载完成");
             }
 
         });
